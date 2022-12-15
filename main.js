@@ -6,7 +6,7 @@
 //sad cat
 // https://cdn-icons-png.flaticon.com/512/12/12430.png
 
-const dogSynonyms = ["doggo", "puppericino", "pooch", "tail-wagger", "good ol' boi"];
+const dogSynonyms = ["puppericino", "pooch", "tail-wagger", "good ol' boi"];
 
 const background = document.querySelector("._31N0dvxfpsO6Ur5AKx4O5d");
 background.style.backgroundImage =
