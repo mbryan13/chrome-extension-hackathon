@@ -27,13 +27,12 @@ window.addEventListener("load", function (e) {
 
   const allText = document.querySelectorAll("._eYtD2XCVieq6emjKBH3m, ._1qeIAgB0cPwnLhDF9XSiJM");
   allText.forEach(el => {
-    el.innerHTML = el.innerHTML.replace("dog", dogSynonyms[Math.floor(Math.random() * dogSynonyms.length)]);
+    el.innerHTML = el.innerHTML.replace("dog", `<span style="color: rgba(0,0,255,0.5); text-shadow: 0px 0px 2px yellow; font-family:GoodBoy;">${dogSynonyms[Math.floor(Math.random() * dogSynonyms.length)]}</span>`);
   })
 
 });
 
 document.addEventListener(`scroll`, function (e) {
-  console.log("scrolled");
   const allUpvotes = document.querySelectorAll("._2k73nZrjAYiwAj9hv7K-kq");
   allUpvotes.forEach((ele) => {
     ele.style.backgroundImage =
@@ -49,7 +48,6 @@ document.addEventListener(`scroll`, function (e) {
   const allText = document.querySelectorAll("._eYtD2XCVieq6emjKBH3m, ._1qeIAgB0cPwnLhDF9XSiJM");
   allText.forEach(el => {
     el.innerHTML = el.innerHTML.replace("dog", `<span style="opacity: 0.5; color: blue; text-shadow: 0px 0px 2px yellow; font-family:GoodBoy;">${dogSynonyms[Math.floor(Math.random() * dogSynonyms.length)]}</span>`);
-    // el.className = "goodBoy";
   })
 });
 
