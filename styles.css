@@ -1,0 +1,10 @@
+@font-face {
+    font-family: GoodBoy;
+    font-style: normal;
+    font-weight: 700;
+    src: url(chrome-extension://floeogmeehieopgiicdkhdhofnepmhdd/GoodBoy.ttf);
+}
+
+.goodBoy {
+    /* background-color: red; */
+}
