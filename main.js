@@ -6,7 +6,15 @@
 //sad cat
 // https://cdn-icons-png.flaticon.com/512/12/12430.png
 
-const dogSynonyms = ["doggo", "puppericino", "pooch", "tail-wagger", "good ol' boi"];
+const dogSynonyms = [
+  "doggo",
+  "puppericino",
+  "pooch",
+  "tail-wagger",
+  "good ol' boi",
+  "doge",
+  "woofer",
+];
 
 const background = document.querySelector("._31N0dvxfpsO6Ur5AKx4O5d");
 background.style.backgroundImage =
@@ -25,11 +33,17 @@ window.addEventListener("load", function (e) {
       "url(https://cdn-icons-png.flaticon.com/512/12/12430.png)";
   });
 
-  const allText = document.querySelectorAll("._eYtD2XCVieq6emjKBH3m, ._1qeIAgB0cPwnLhDF9XSiJM");
-  allText.forEach(el => {
-    el.innerHTML = el.innerHTML.replace("dog", `<span style="color: rgba(0,0,255,0.7); text-shadow: 0px 0px 2px yellow; font-family:GoodBoy;">${dogSynonyms[Math.floor(Math.random() * dogSynonyms.length)]}</span>`);
-  })
-
+  const allText = document.querySelectorAll(
+    "._eYtD2XCVieq6emjKBH3m, ._1qeIAgB0cPwnLhDF9XSiJM"
+  );
+  allText.forEach((el) => {
+    el.innerHTML = el.innerHTML.replace(
+      "dog",
+      `<span style="color: rgba(0,0,255,0.7); text-shadow: 0px 0px 2px yellow; font-family:GoodBoy;">${
+        dogSynonyms[Math.floor(Math.random() * dogSynonyms.length)]
+      }</span>`
+    );
+  });
 });
 
 document.addEventListener(`scroll`, function (e) {
@@ -45,10 +59,17 @@ document.addEventListener(`scroll`, function (e) {
       "url(https://cdn-icons-png.flaticon.com/512/12/12430.png)";
   });
 
-  const allText = document.querySelectorAll("._eYtD2XCVieq6emjKBH3m, ._1qeIAgB0cPwnLhDF9XSiJM");
-  allText.forEach(el => {
-    el.innerHTML = el.innerHTML.replace("dog", `<span style="color: rgba(0,0,255,0.7); text-shadow: 0px 0px 2px yellow; font-family:GoodBoy;">${dogSynonyms[Math.floor(Math.random() * dogSynonyms.length)]}</span>`);
-  })
+  const allText = document.querySelectorAll(
+    "._eYtD2XCVieq6emjKBH3m, ._1qeIAgB0cPwnLhDF9XSiJM"
+  );
+  allText.forEach((el) => {
+    el.innerHTML = el.innerHTML.replace(
+      "dog",
+      `<span style="color: rgba(0,0,255,0.7); text-shadow: 0px 0px 2px yellow; font-family:GoodBoy;">${
+        dogSynonyms[Math.floor(Math.random() * dogSynonyms.length)]
+      }</span>`
+    );
+  });
 });
 
 //PAWPRINT BACKGROUND SECTION

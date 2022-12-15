@@ -5,25 +5,20 @@
   "description": "takes the subreddit r/dogs and turns it from a doghouse to a doghome",
   "content_scripts": [
     {
-      "matches": [
-        "https://www.reddit.com/r/dogs/*"
-      ],
-      "js": [
-        "./main.js"
-      ],
-      "css": [
-        "styles.css"
-      ]
+      "matches": ["https://www.reddit.com/r/dogs/*"],
+      "js": ["./main.js"],
+      "css": ["styles.css"]
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": [
-        "GoodBoy.ttf"
-      ],
-      "matches": [
-        "<all_urls>"
-      ]
+      "resources": ["GoodBoy.ttf"],
+      "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "5569626.png",
+    "48": "5569626.png",
+    "128": "5569626.png"
+  }
 }
