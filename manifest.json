@@ -1,16 +1,12 @@
 {
-    "manifest_version": 2,
-    "name": "Focus",
-    "version": "1.0",
-    "description": "",
-    "content_scripts": [
-        {
-            "matches": [
-                "https://www.youtube.com/*"
-            ],
-            "js": [
-                "./main.js"
-            ]
-        }
-    ]
+  "manifest_version": 2,
+  "name": "Dogify",
+  "version": "1.1",
+  "description": "takes the subreddit r/dogs and turns it from a doghouse to a doghome",
+  "content_scripts": [
+    {
+      "matches": ["https://www.reddit.com/r/dogs/*"],
+      "js": ["./main.js"]
+    }
+  ]
 }
